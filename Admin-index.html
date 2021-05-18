@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./css/style-admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">
+                        <h2>Dụng Cụ Y Tế Sài Gòn</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-product-hunt" aria-hidden="true"></i></span>
+                        <span class="title"> Quản lý sản phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
+                        <span class="title">Quản lý tin tức</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="title">Quản lý tài khoản</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Quản lý danh mục sản phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Mật khẩu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Đăng suất</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here" >
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user" >
+                    <img src="./img/avatar.svg" alt="avatar">
+                </div>
+            </div>
+            <div class="cardBox">
+                <div class="card border-left-views shadow h-100 py-2">
+                    <div>
+                        <div class="numbers">1,024</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card border-left-Products shadow h-100 py-2">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card border-left-comments shadow h-100 py-2">
+                    <div>
+                        <div class="numbers">1,024</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card border-left-danhmuc shadow h-100 py-2">
+                    <div>
+                        <div class="numbers">1,024</div>
+                        <div class="cardName">Earning</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="products">
+                    <div class="cardHeader">
+                        <h2>Sản phẩm</h2>
+                        <a href="#" class="btn"> View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Tên sản phẩm</td>
+                                <td>Giá</td>
+                                <td>payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>1200</td>
+                                <td>paid</td>
+                                <td><span class="status deliver">giao hang</span></td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>1200</td>
+                                <td>paid</td>
+                                <td><span class="status deliver">giao hang</span></td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>1200</td>
+                                <td>paid</td>
+                                <td><span class="status pending">giao hang</span></td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>1200</td>
+                                <td>paid</td>
+                                <td><span class="status return">giao hang</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="news">
+                    <div class="cardHeader">
+                        <h2>Tin tức - Sự kiện</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="./img/img1.jpg">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>David<br><span>VietNam</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="./img/img2.jpg">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>David<br><span>VietNam</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="./img/img3.jpg">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>David<br><span>VietNam</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="./img/img4.jpg">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>David<br><span>VietNam</span></h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+
+        }
+        document.querySelector(".user ul li").addEventListener("click", function(){
+        this.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
