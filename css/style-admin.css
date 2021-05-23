@@ -43,7 +43,7 @@ body{
 }
 .navigation ul li:nth-child(1):hover{
     background: transparent;
-
+    
 }
 .navigation ul li a{
     position: relative;
@@ -113,12 +113,12 @@ body{
     text-align: center;
     color: #111;
 }
-.search{
+.search input{
     position: relative;
     margin: 0 10px;
     padding: 20px 30px;
     width: 400px;
-    max-width: 200px;
+    max-width: 400px;
 }
 .search label{
     position: relative;
@@ -135,8 +135,8 @@ body{
 }
 .search label  .fa{
     position: absolute;
-    left: 15px;
-    top: 4px;
+    left: 25px;
+    top: 2px;
 }
 .user{
     position: relative;

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./css/style-admin.css">
+    <link rel="stylesheet" href="./css/product-admin.css">
+    <link rel="stylesheet" href="./js/btn-top.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="./Admin-index.html">
+                        <span class="icon"></span>
+                        <span class="title">
+                        <h2>Dụng Cụ Y Tế Sài Gòn</h2>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./product-admin.html">
+                        <span class="icon"><i class="fa fa-product-hunt" aria-hidden="true"></i></span>
+                        <span class="title"> Quản lý sản phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./news.html">
+                        <span class="icon"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
+                        <span class="title">Quản lý tin tức</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./account-admin.html">
+                        <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="title">Quản lý tài khoản</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./danhmuc-admin.html">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Quản lý danh mục sản phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Mật khẩu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Đăng suất</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here" >
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user" >
+                    <img src="./img/avatar.svg" alt="avatar">
+                </div>
+            </div>  
+            <div class="Add">
+                <div class="Add-product">
+                    <h2>Danh mục sản phẩm</h2>
+                    <p>Thêm danh mục:</p>
+                    <a href="#">
+                        <i class="add-product fa fa-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="details-product">
+                <div class="products">
+                    <div class="cardHeader">
+                        <div class="show">
+                            <div class="show-item">
+                                <label>Show
+                                    <select name="showItem" aria-controls="" class="customer-show">
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                        <option value="50">50</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter">
+                            <div class="filter-search">
+                                Search:
+                                <input type="search" class="filter-s">
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>#</td>
+                                <td>Danh Mục Sản Phẩm</td>
+                                <td>Giá</td>
+                                <td>Hành Động</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>1</td>
+                                <td>Bút xóa nốt ruồi</td>
+                                <td>Liên hệ</td>
+                                <td>
+                                    <a href="#">
+                                        <i class=" edit fa fa-pencil" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class=" delete fa fa-trash" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>2</td>
+                                <td>Bút xóa nốt ruồi</td>
+                                <td>Liên hệ</td>
+                                <td>
+                                    <a href="#">
+                                        <i class=" edit fa fa-pencil" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class=" delete fa fa-trash" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>3</td>
+                                <td>Bút xóa nốt ruồi</td>
+                                <td>Liên hệ</td>
+                                <td>
+                                    <a href="#">
+                                        <i class=" edit fa fa-pencil" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class=" delete fa fa-trash" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>4</td>
+                                <td>Bút xóa nốt ruồi</td>
+                                <td>Liên hệ</td>
+                                <td>
+                                    <a href="#">
+                                        <i class=" edit fa fa-pencil" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class=" delete fa fa-trash" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>5</td>
+                                <td>Bút xóa nốt ruồi</td>
+                                <td>Liên hệ</td>
+                                <td>
+                                    <a href="#">
+                                        <i class=" edit fa fa-pencil" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class=" delete fa fa-trash" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>6</td>
+                                <td>Bút xóa nốt ruồi</td>
+                                <td>Liên hệ</td>
+                                <td>
+                                    <a href="#">
+                                        <i class=" edit fa fa-pencil" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class=" delete fa fa-trash" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>7</td>
+                                <td>Bút xóa nốt ruồi</td>
+                                <td>Liên hệ</td>
+                                <td>
+                                    <a href="#">
+                                        <i class=" edit fa fa-pencil" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class=" delete fa fa-trash" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="control">
+                        <ul class="numbers">
+                            <li  class="control-numbers">
+                                <a href="#" class="page-link">Trước</a>
+                            </li>
+                            <li  class="control-numbers">
+                                <a href="#" class="page-link">
+                                    1
+                                </a>
+                            </li>
+                            <li  class="control-numbers">
+                                <a href="#" class="page-link">2</a>
+                            </li>
+                            <li  class="control-numbers">
+                                <a href="#" class="page-link">3</a>
+                            </li>
+                            <li  class="control-numbers">
+                                <a href="#" class="page-link">4</a>
+                            </li>
+                            <li  class="control-numbers">
+                                <a href="#" class="page-link">5</a>
+                            </li>
+                            <li  class="control-numbers">
+                                <a href="#" class="page-link">Sau</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+
+        }
+        document.querySelector(".user ul li").addEventListener("click", function(){
+        this.classList.toggle("active");
+        });
+    </script>
+    <div class="on-top"> <a class="btn-top" href="javascript:void(0);" title="Top" style="display: inline;"></a> </div>
+</body>
+</html>
